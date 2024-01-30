@@ -8,6 +8,9 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
+            name: "DummyPackage",
+            targets: ["DummyPackage"]),
+        .library(
             name: "DummyPackage-static",
             type: .static,
             targets: ["DummyPackage"]),
